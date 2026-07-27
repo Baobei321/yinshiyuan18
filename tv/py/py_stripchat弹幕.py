@@ -1,21 +1,4 @@
-#亚洲情色$亚洲情色#中文字幕$中文字幕#国产主播$国产主播#国产自拍$国产自拍#Hey动画$Hey动画#无码专区$无码专区#欧美性爱$欧美性爱#卡通动画$卡通动画#熟女人妻$熟女人妻#巨乳美乳$巨乳美乳#强奸乱伦$强奸乱伦#制服诱惑$制服诱惑#少女萝莉$少女萝莉#女同性恋$女同性恋#丝袜长腿$丝袜长腿#重口色情$重口色情
-爬虫: Python
-输出: 初始化配置失败: Expecting value: line 1 column 1 (char 0)
-
-'User-Agent': 'Mozilla/5.0 (Linux; Android 11; M2007J3SC Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045713 Mobile Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q.0.8',
-            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-            'Referer': self.host
-            
-            
-            https://zh.stripol.com/api/front/models?improveTs=false&removeShows=false&limit=60&offset=0&primaryTag=girls&sortBy=viewersRating&rcmGrp=A&rbCnGr=true&prxCnGr=false&nic=false
-            
-            
-            
-            
-            # coding=utf-8
+# coding=utf-8
 #!/usr/bin/python
 import sys, re, base64, json, requests, time, threading, random
 from base.spider import Spider
@@ -57,138 +40,46 @@ class Spider(Spider):
 
     def homeContent(self, filter):
         CLASSES = [{'type_name': '女主播', 'type_id': 'girls'}, {'type_name': '情侣', 'type_id': 'couples'}, {'type_name': '男主播', 'type_id': 'men'}, {'type_name': '跨性别', 'type_id': 'trans'}]
-        VALUE = [{'n': '新主播', 'v': 'autoTagNew'},
-{'n': '推荐', 'v': 'recommended'},
-{"v":"fuckMachine","n":"炮机"},
-{'n': '青年', 'v': 'ageTeen'},
-{'n': 'VR', 'v': 'autoTagVr'},
-{'n': '亚洲人', 'v': 'ethnicityAsian'},
-{'n': '🇨🇳中国', 'v': 'tagLanguageChinese'}, {'n': '🇯🇵日本', 'v': 'tagLanguageJapanese'}, {'n': '🇰🇷韩国', 'v': 'tagLanguageKorean'}, {'n': '🇻🇳越南', 'v': 'tagLanguageVietnamese'},{"v":"tagLanguageUkrainian","n":"🇺🇦乌克兰"},
-{"v":"tagLanguageRussianSpeaking","n":"🇷🇺俄罗斯"},
-{"v":"tagLanguageUSModels","n":"🇺🇸美国"},
-{"v":"tagLanguageColombian","n":"🇨🇴哥伦比亚"},
-{"v":"tagLanguageGermanSpeaking","n":"🇩🇪德国"},
-{"v":"tagLanguageFrench","n":"🇫🇷法国"},
-{"v":"tagLanguageUKModels","n":"🇬🇧英国"},
-{"v":"tagLanguageCanadian","n":"🇨🇦加拿大"},
-{"v":"tagLanguageMexican","n":"🇲🇽墨西哥"},
-{"v":"ethnicityIndian","n":"🇮🇳印度"},
-{"v":"tagLanguageVenezuelan","n":"🇻🇪委内瑞拉"},
-{"v":"tagLanguageRomanian","n":"🇷🇴罗马尼亚"},
-{"v":"tagLanguageAfrican","n":"🌍非洲"},
-{"v":"tagLanguageSpanishSpeaking","n":"🇪🇸西班牙"},
-{"v":"ethnicityMiddleEastern","n":"🇸🇦🇦🇪阿拉伯"},
-{"v":"tagLanguageKenyan","n":"🇰🇪肯尼亚"},
-{"v":"tagLanguageSouthAfrican","n":"🇿🇦南非"},
-{"v":"tagLanguageBrazilian","n":"🇧🇷巴西"},
-{"v":"tagLanguageThai","n":"🇹🇭泰国"},
-{"v":"tagLanguageItalian","n":"🇮🇹意大利"},
-{'n': '亚洲', 'v': 'ethnicityAsian'}, {'n': '白人', 'v': 'ethnicityWhite'}, {'n': '拉丁', 'v': 'ethnicityLatino'}, {'n': '混血', 'v': 'ethnicityMultiracial'}, {'n': '印度', 'v': 'ethnicityIndian'}, {'n': '阿拉伯', 'v': 'ethnicityMiddleEastern'}, {'n': '黑人', 'v': 'ethnicityEbony'},{'n': '✨新主播', 'v': 'autoTagNew'},{'n': 'VR直播', 'v': 'autoTagVr'},{'n': '18+', 'v': 'ageTeen'},{'n': '鲜嫩青年22+', 'v': 'ageYoung'},{'n': '学生', 'v': 'subcultureStudent'},{'n': '口交', 'v': 'doBlowjob'},{'n': '深喉', 'v': 'doDeepThroat'},{'n': '恋足', 'v': 'doFootFetish'},{'n': '互动玩具', 'v': 'autoTagInteractiveToy'},{'n': '自慰', 'v': 'doMasturbation'},{'n': '肛交', 'v': 'doAnal'},{'n': '潮吹', 'v': 'doSquirt'},{'n': '狗式', 'v': 'doDoggyStyle'},{'n': 'Cosplay', 'v': 'doCosplay'},{'n': 'RolePlay', 'v': 'doRolePlay'}]
+        VALUE = [{'n': '中国', 'v': 'tagLanguageChinese'}, {'n': '亚洲', 'v': 'ethnicityAsian'}, {'n': '白人', 'v': 'ethnicityWhite'}, {'n': '拉丁', 'v': 'ethnicityLatino'}, {'n': '混血', 'v': 'ethnicityMultiracial'}, {'n': '印度', 'v': 'ethnicityIndian'}, {'n': '阿拉伯', 'v': 'ethnicityMiddleEastern'}, {'n': '黑人', 'v': 'ethnicityEbony'}]
         VALUE_MEN = [{'n': '情侣', 'v': 'sexGayCouples'}, {'n': '直男', 'v': 'orientationStraight'}]
         TIDS = ('girls', 'couples', 'men', 'trans')
         filters = {tid: [{'key': 'tag', 'value': VALUE_MEN + VALUE if tid == 'men' else VALUE}] for tid in TIDS}
         return {'class': CLASSES, 'filters': filters}
 
-    def _parse_status_remark(self, is_live, status, viewers=0):
-        if not is_live or status == "off":
-            status_text = "⚫ 已下播"
-        elif status == "public":
-            status_text = "🔴 直播中"
-        else:
-            status_text = "🎫 门票房"
-            
-        return f"👤 {viewers}人 | {status_text}" if viewers else status_text
-
     def categoryContent(self, tid, pg, filter, extend):
-        try:
-            if tid.startswith('search '):
-                _, tag, key = tid.split(maxsplit=2)
-                rsp = self.session_get(f"{self.host}/api/front/v4/models/search/group/username?query={key}&limit=900&primaryTag={tag}").json()
-                videos = []
-                for u in rsp.get('models', []):
-                    if not u.get('isLive'): continue
-                    viewers = u.get('viewersCount', 0)
-                    is_live = u.get('isLive', False)
-                    status = u.get('status', 'off')
-                    
-                    remark = self._parse_status_remark(is_live, status, viewers)
-                    videos.append({
-                        "vod_id": str(u['username']),
-                        "vod_name": f"{self.country_code_to_flag(str(u.get('country', '')))}{u['username']}",
-                        "vod_pic": f"https://img.{self.Doppiocdn}/snapshot/{u['id']}/{u.get('snapshotTimestamp', '')}",
-                        'style': {"type": "rect", "ratio": 1.78},
-                        "vod_remarks": remark
-                    })
-                return {'list': videos, "page": pg, "pagecount": 1}
-
-            limit = 60
-            offset = limit * (int(pg) - 1)
-            url = f"{self.host}/api/front/models?improveTs=false&removeShows=false&limit={limit}&offset={offset}&primaryTag={tid}&sortBy=stripRanking&rcmGrp=A&rbCnGr=true&prxCnGr=false&nic=false"
-            if 'tag' in extend: url += f'&filterGroupTags=[["{extend["tag"]}"]]'
-            rsp = self.session_get(url).json()
-
-            videos = []
-            for v in rsp.get('models', []):
-                is_live = v.get('isLive', False)
-                status = v.get('status', 'public')
-                viewers = v.get('viewersCount', 0)
-                
-                remark = self._parse_status_remark(is_live, status, viewers)
-
-                videos.append({
-                    "vod_id": str(v['username']),
-                    "vod_name": f"{self.country_code_to_flag(str(v.get('country', '')))}{v['username']}",
-                    "vod_pic": f"https://img.{self.Doppiocdn}/snapshot/{v['id']}/{v.get('snapshotTimestamp', '')}",
-                    "vod_remarks": remark
-                })
-
-            total = int(rsp.get('filteredCount', 0))
-            return {"list": videos, "page": pg, "pagecount": (total + limit - 1) // limit, "limit": limit, "total": total}
-        except Exception as e:
-            self.log(f"获取分类内容失败: {e}")
-            return {"list": [], "page": pg, "pagecount": 1, "limit": 60, "total": 0}
+        if tid.startswith('search '):
+            _, tag, key = tid.split(maxsplit=2)
+            rsp = self.session_get(f"{self.host}/api/front/v4/models/search/group/username?query={key}&limit=900&primaryTag={tag}").json()
+            return {'list': [{"vod_id": str(u['username']), "vod_name": f"{self.country_code_to_flag(str(u['country']))}{u['username']}", "vod_pic": f"https://img.{self.Doppiocdn}/snapshot/{u['id']}/{u['snapshotTimestamp']}", 'style': {"type": "rect", "ratio": 1.78}, "vod_remarks": "" if u['status'] == "public" else "🎫"} for u in rsp.get('models', []) if u['isLive']], "page": pg, "pagecount": 1}
+        limit = 60
+        offset = limit * (int(pg) - 1)
+        url = f"{self.host}/api/front/models?improveTs=false&removeShows=false&limit={limit}&offset={offset}&primaryTag={tid}&sortBy=stripRanking&rcmGrp=A&rbCnGr=true&prxCnGr=false&nic=false"
+        if 'tag' in extend: url += f'&filterGroupTags=[["{extend["tag"]}"]]'
+        rsp = self.session_get(url).json()
+        videos = [{"vod_id": str(v['username']), "vod_name": f"{self.country_code_to_flag(str(v['country']))}{v['username']}", "vod_pic": f"https://img.{self.Doppiocdn}/snapshot/{v['id']}/{v['snapshotTimestamp']}", "vod_remarks": "" if v.get('status') == "public" else "🎫"} for v in rsp.get('models', [])]
+        total = int(rsp.get('filteredCount', 0))
+        return {"list": videos, "page": pg, "pagecount": (total + limit - 1) // limit, "limit": limit, "total": total}
 
     def detailContent(self, array):
         username = array[0]
         try:
             rsp = self.session_get(f"{self.host}/api/front/v2/models/username/{username}/cam").json()
-            info = rsp.get('cam', {})
-            user = rsp.get('user', {}).get('user', {})
-            uid, isLive = str(user.get('id', '')), user.get('isLive', False)
-
+            info, user = rsp['cam'], rsp['user']['user']
+            uid, isLive = str(user['id']), user['isLive']
             oldName = self.stripchat_play.rsplit(' ', 1)[-1]
             if username != oldName:
                 timestp = int(time.time())
                 self.stripchat_play = f"0 {timestp} {username}"
-            flag = self.country_code_to_flag(str(user.get('country', '')).strip())
-
-            # 仅显示直播状态/开播时间，已取消在线人数拼接
+            flag = self.country_code_to_flag(str(user['country']).strip())
             remark = "🔴 直播中" if isLive else "⚫ 已下播"
             show = info.get('show') or info.get('groupShowAnnouncement')
             if show:
                 startAt = show.get('createdAt') or show.get('startAt')
                 if startAt: remark = f"🎫 始于 {self.datetime_utc8(startAt, '%m月%d日 %H:%M')}"
-
             director = f"{flag}{username}"
             desc = self.get_danmaku_desc(uid)
-
-            # 配置 3 条线路（线路二名称已更换为 stripchat.global）
-            vod_play_from = 'StripChat$$$stripchat.global$$$StripOl'
-            vod_play_url = f"主线路${uid}$$$备用线路$lemon_{uid}$$$第三线路$sacf_{uid}"
-
-            return {'list': [{
-                "vod_id": username,
-                "vod_name": str(info.get('topic', ''))[:80],
-                "vod_pic": str(user.get('avatarUrl', '')),
-                "vod_director": director,
-                "vod_content": desc,
-                "vod_remarks": remark,
-                'vod_play_from': vod_play_from,
-                'vod_play_url': vod_play_url
-            }]}
-        except Exception as e:
-            self.log(f"获取详情失败: {e}")
-            return {'list': []}
+            return {'list': [{"vod_id": username, "vod_name": str(info['topic'])[:80], "vod_pic": str(user['avatarUrl']), "vod_director": director, "vod_content": desc, "vod_remarks": remark, 'vod_play_from': 'StripChat$$$LemonCams', 'vod_play_url': f"{uid}${uid}$$${uid}$lemon_{uid}"}]}
+        except: return {'list': []}
 
     def searchContent(self, key, quick, pg="1"):
         if int(pg) > 1: return {}
@@ -199,8 +90,6 @@ class Spider(Spider):
         try:
             sid = id.split('_')[-1]
             self.start_danmu(sid)
-            
-            # --- 线路2: stripchat.global ---
             if id.startswith('lemon'):
                 rsp = self.session_get(f"https://edge-hls.growcdnssedge.com/hls/{sid}/master/{sid}_auto.m3u8?playlistType=lowLatency").text
                 lines = rsp.strip().split('\n')
@@ -210,26 +99,11 @@ class Spider(Spider):
                         qn = line[qn_start:line.find('"', qn_start)]
                         url = lines[i + 1]
                         urls.extend([qn, url])
-                headers = {'User-Agent': self.headers.get('User-Agent'), 'Origin': 'https://zh.stripchat.global', 'Referer': 'https://zh.stripchat.global/'}
-            
-            # --- 线路3: StripOl (https://zh.stripol.com) ---
-            elif id.startswith('sacf'):
-                rsp = self.session_get(f"https://edge-hls.{self.Doppiocdn}/hls/{sid}/master/{sid}_auto.m3u8?playlistType=lowLatency").text
-                lines = rsp.strip().split('\n')
-                psch, pkey = 'v2', self.stripchat_pkey
-                for i, line in enumerate(lines):
-                    if '#EXT-X-STREAM-INF' in line:
-                        qn_start = line.find('NAME="')+6
-                        qn = line[qn_start:line.find('"', qn_start)]
-                        full_url = f"{lines[i+1]}&psch={psch}&pkey={pkey}&preferredVideoCodec={self.stripchat_preferredVideoCodec}"
-                        urls.extend([qn, f"{self.getProxyUrl()}&url={quote(full_url)}"])
-                headers = {'User-Agent': self.headers.get('User-Agent'), 'Origin': 'https://zh.stripol.com', 'Referer': 'https://zh.stripol.com/'}
-
-            # --- 线路1: StripChat (主线路) ---
+                headers = {'User-Agent': self.headers.get('User-Agent'), 'Origin': 'https://www.lemoncams.com', 'Referer': 'https://www.lemoncams.com/'}
             else:
                 rsp = self.session_get(f"https://edge-hls.{self.Doppiocdn}/hls/{sid}/master/{sid}_auto.m3u8?playlistType=lowLatency").text
                 lines = rsp.strip().split('\n')
-                psch, pkey = 'v2', self.stripchat_pkey
+                psch, pkey, processed = 'v2', self.stripchat_pkey, False
                 for i, line in enumerate(lines):
                     if '#EXT-X-STREAM-INF' in line:
                         qn_start = line.find('NAME="')+6
@@ -237,7 +111,6 @@ class Spider(Spider):
                         full_url = f"{lines[i+1]}&psch={psch}&pkey={pkey}&preferredVideoCodec={self.stripchat_preferredVideoCodec}"
                         urls.extend([qn, f"{self.getProxyUrl()}&url={quote(full_url)}"])
                 headers = {k: v for k, v in self.headers.items() if k != 'Accept-Language'}
-
             return {"url": urls, "parse": '0', 'position': '0', "header": headers}
         except Exception as e:
             self.log(f"播放失败 {id}: {e}")
@@ -330,8 +203,9 @@ class Spider(Spider):
                     continue
                 if ot.is_alive():
                     self.log(f"正在关闭其他房间弹幕线程: {rid}")
-                    stop_evt.set()
-                    ot.join(timeout=1.0)
+                    stop_evt.set()        # 通知线程停止
+                    ot.join(timeout=1.0)  # 等待线程结束（最多1秒）
+                    # 从字典中移除（确保不保留死线程）
                     del self.danmu_threads[rid]
             stop_event = threading.Event()
             t = threading.Thread(target=self._danmu_poll_worker, args=(room_id, stop_event), daemon=True)

@@ -115,7 +115,7 @@ class Spider(Spider):
             remarks = [item for item in [tag_str, viewers_str, show_type] if item]
             
             videos.append({
-                "vod_id": f"{username}|{remarks}",# ← 把 remarks 拼进去
+                "vod_id": username,
                 "vod_name": username,
                 "vod_pic": f"https://img.doppiocdn.net/thumbs/{stamp}/{id}" if stamp and id else "",
                 "vod_remarks": " | ".join(remarks)
@@ -132,11 +132,7 @@ class Spider(Spider):
         return result
 
     def detailContent(self, array):
-        # array[0] 现在是 "username|remarks" 格式   
-        data = array[0].split('|', 1)
-        username = data[0]
-        remarks = data[1] if len(data) > 1 else "免费直播"
-        
+        username = array[0]
         domain = f"{self.host}api/front/v2/models/username/{username}/cam"
         rsp = requests.get(domain, headers=self.headers).json()
         info = rsp['cam']
@@ -147,7 +143,6 @@ class Spider(Spider):
             "vod_name": str(info['topic']).strip(), 
             "vod_pic": str(user['avatarUrl']),
             "vod_director": username,
-            "vod_remarks": str(remarks).replace("[", "").replace("]", "").replace("'", "").replace(",", " | "),   # ← 直接这样处理# ← 直接使用从列表页传过来的
             "vod_area": str(user['country']),
              "vod_actor": username,          # 作者（演员），与导演相同
         "vod_content": f"{self.host}{username}#长按复制到浏览器观看",     # 简介内容为链接
@@ -165,7 +160,7 @@ class Spider(Spider):
         pass
 
     def playerContent(self, flag, id, vipFlags):
-        domain = f"https://edge-hls.sacfedge.com/hls/{id}/master/{id}_auto.m3u8?playlistType=lowLatency"
+        domain = f"https://edge-hls.growcdnssedge.com/hls/{id}/master/{id}_auto.m3u8?playlistType=lowLatency"
         rsp = requests.get(domain, headers=self.headers).text
         lines = rsp.strip().split('\n')
         psch = ''
