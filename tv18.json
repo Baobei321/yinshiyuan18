@@ -72,32 +72,7 @@
 			},
 			"changeable": 1
 		},
-		{
-			"key": "stripchat1-py",
-			"name": "💯stripchat标清[直播][py]",
-			"type": 3,
-			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/stripchat.py",
-			"searchable": 0,
-			"filterable": 0,
-			"changeable": 0,
-			"style": {
-				"type": "rect",
-				"ratio": 1.6
-			}
-		},
-		{
-			"key": "stripchat2-py",
-			"name": "💯stripchat高清弹幕[直播][py]",
-			"type": 3,
-			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/py_stripchat飞鱼高级版备份.py",
-			"searchable": 0,
-			"filterable": 0,
-			"changeable": 0,
-			"style": {
-				"type": "rect",
-				"ratio": 1.6
-			}
-		},
+		
 		{
 			"key": "stripchat直播通用弹幕-py",
 			"name": "💯stripchat高清通用弹幕[直播][py]",
@@ -231,10 +206,333 @@
 			"changeable": 0
 		},*/
 		{
+			"key": "theavporn.py-py",
+			"name": "theavporn[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/theavporn.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "肉视频1-py",
+			"name": "肉视频[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/肉视频.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "owoav-py",
+			"name": "OWOAV[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/owoav.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "qinav-py",
+			"name": "qinav[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/qinav.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "杏吧APP-py",
+			"name": "杏吧APP[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/杏吧app.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "视色-py",
+			"name": "视色[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/视色.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "youav-py",
+			"name": "youav[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/youav.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "海角情-py",
+			"name": "海角情[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/海角情.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "海角乱伦-py",
+			"name": "海角乱伦[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/海角乱伦.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "玩物社区-py",
+			"name": "玩物社区[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/玩物社区.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "爱妻艺-py",
+			"name": "爱妻艺[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/爱妻艺.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "老王视频-py",
+			"name": "老王视频[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/老王视频.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "色虎av-py",
+			"name": "色虎AV[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/色虎av.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "杏吧视频-py",
+			"name": "杏吧视频[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/杏吧视频.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "萝莉岛-py",
+			"name": "萝莉岛[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/萝莉岛.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "supjav.py-py",
+			"name": "supjav.py[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/supjav.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "hubff-py",
+			"name": "hubff[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/hubff.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "p115.py-py",
+			"name": "p115[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/p115.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "Javdb.py-py",
+			"name": "Javdb[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/Javdb.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "missav-app.py-py",
+			"name": "missav-app[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/missav-app.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "ggjav-py",
+			"name": "ggjav[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/ggjav.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
 			"key": "ppp1-py",
 			"name": "ppp[py]",
 			"type": 3,
 			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/ppp.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		{
+			"key": "seajav.py-py",
+			"name": "seajav[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/seajav.py",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.6
+			}
+		},
+		
+		{
+			"key": "推特涩涩.py-py",
+			"name": "推特涩涩[py]",
+			"type": 3,
+			"api": "https://gh-proxy.org/https://raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/py/推特涩涩.py",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 0,
@@ -730,7 +1028,7 @@
 			"changeable": 0,
 			"style": {
 				"type": "rect",
-				"ratio": 1.6
+				"ratio": 1.77
 			}
 		},
 		{
