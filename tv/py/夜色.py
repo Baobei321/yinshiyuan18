@@ -1,6 +1,6 @@
 import re
 import json
-from urllib.parse import quote, urljoin
+from urllib.parse import quote, urljoin, unquote
 
 import requests
 
@@ -200,12 +200,42 @@ class Spider(Spider):
         return {"list": videos}
 
     def playerContent(self, flag, id, vipFlags):
-        return {
-            "parse": 1,
-            "playUrl": "",
-            "url": id,
-            "header": json.dumps(self.headers)
-        }
+        play_url = id
+        try:
+            # 请求播放页面获取网页源码
+            res = self.fetch(id)
+            html = res.text
+
+            # 方案 1：匹配苹果 CMS 标准的 player_aac / player_aaaa 播放配置对象
+            m = re.search(r'var\s+player_aa\w*\s*=\s*(\{.*?\});', html, re.S)
+            if m:
+                player_info = json.loads(m.group(1))
+                raw_url = player_info.get("url", "")
+                if raw_url:
+                    play_url = unquote(raw_url)
+
+            # 方案 2：如果提取到的不是 .m3u8/HTTP 格式，或是动态 URL，正则全页匹配直连地址
+            if not play_url.startswith("http") or ".m3u8" not in play_url:
+                m_m3u8 = re.search(r'(https?://[^\'\"]+\.m3u8[^\'\"]*)', html)
+                if m_m3u8:
+                    play_url = m_m3u8.group(1)
+
+            # 修正 URL 中的转义斜杠
+            play_url = play_url.replace("\\/", "/")
+
+            return {
+                "parse": 0,  # 设为 0 直接交由内置播放器播放 m3u8
+                "playUrl": "",
+                "url": play_url,
+                "header": json.dumps(self.headers)
+            }
+        except Exception:
+            return {
+                "parse": 0,
+                "playUrl": "",
+                "url": id,
+                "header": json.dumps(self.headers)
+            }
 
     def localProxy(self, params):
         return [200, "video/MP2T", ""]
